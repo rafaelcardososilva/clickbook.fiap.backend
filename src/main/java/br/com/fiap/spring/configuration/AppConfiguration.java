@@ -1,6 +1,6 @@
 package br.com.fiap.spring.configuration;
 
-import br.com.fiap.spring.validator.LivroValidator;
+import br.com.fiap.spring.validator.cadastro.CadastroValidator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfiguration {
 
     @Bean
-    public LivroValidator livroValidator(){
-        return new LivroValidator();
+    public CadastroValidator cadastroValidator(){
+        return new CadastroValidator();
     }
 
 }
