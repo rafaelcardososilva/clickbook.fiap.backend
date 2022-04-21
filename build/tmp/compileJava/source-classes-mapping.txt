@@ -1,26 +1,38 @@
+br/com/fiap/spring/service/post/PostService.java
+ br.com.fiap.spring.service.post.PostService
 br/com/fiap/spring/service/cadastro/CadastroService.java
  br.com.fiap.spring.service.cadastro.CadastroService
+br/com/fiap/spring/model/dto/post/PostDTO.java
+ br.com.fiap.spring.model.dto.post.PostDTO
 br/com/fiap/spring/model/entity/cadastro/Cadastro.java
  br.com.fiap.spring.model.entity.cadastro.Cadastro
 br/com/fiap/spring/model/dto/cadastro/CadastroDTO.java
  br.com.fiap.spring.model.dto.cadastro.CadastroDTO
+br/com/fiap/spring/model/entity/post/Post.java
+ br.com.fiap.spring.model.entity.post.Post
+br/com/fiap/spring/service/post/PostServiceImpl.java
+ br.com.fiap.spring.service.post.PostServiceImpl
 br/com/fiap/spring/model/dto/cadastro/VerifyCadastroDTO.java
  br.com.fiap.spring.model.dto.cadastro.VerifyCadastroDTO
-br/com/fiap/spring/service/cadastro/CadastroServiceImpl.java
- br.com.fiap.spring.service.cadastro.CadastroServiceImpl
-br/com/fiap/spring/controller/DebugController.java
- br.com.fiap.spring.controller.DebugController
-br/com/fiap/spring/model/dto/cadastro/CreateUpdateCadastroDTO.java
- br.com.fiap.spring.model.dto.cadastro.CreateUpdateCadastroDTO
-br/com/fiap/spring/Application.java
- br.com.fiap.spring.Application
-br/com/fiap/spring/validator/cadastro/CadastroValidator.java
- br.com.fiap.spring.validator.cadastro.CadastroValidator
-br/com/fiap/spring/model/dto/livro/UpdatePrecoLivroDTO.java
- br.com.fiap.spring.model.dto.livro.UpdatePrecoLivroDTO
-br/com/fiap/spring/configuration/AppConfiguration.java
- br.com.fiap.spring.configuration.AppConfiguration
-br/com/fiap/spring/repository/cadastro/CadastroRepository.java
- br.com.fiap.spring.repository.cadastro.CadastroRepository
 br/com/fiap/spring/controller/cadastro/CadastroController.java
  br.com.fiap.spring.controller.cadastro.CadastroController
+br/com/fiap/spring/repository/post/PostRepository.java
+ br.com.fiap.spring.repository.post.PostRepository
+br/com/fiap/spring/controller/DebugController.java
+ br.com.fiap.spring.controller.DebugController
+br/com/fiap/spring/repository/cadastro/CadastroRepository.java
+ br.com.fiap.spring.repository.cadastro.CadastroRepository
+br/com/fiap/spring/Application.java
+ br.com.fiap.spring.Application
+br/com/fiap/spring/controller/post/PostController.java
+ br.com.fiap.spring.controller.post.PostController
+br/com/fiap/spring/validator/cadastro/CadastroValidator.java
+ br.com.fiap.spring.validator.cadastro.CadastroValidator
+br/com/fiap/spring/model/dto/post/CreateUpdatePostDTO.java
+ br.com.fiap.spring.model.dto.post.CreateUpdatePostDTO
+br/com/fiap/spring/configuration/AppConfiguration.java
+ br.com.fiap.spring.configuration.AppConfiguration
+br/com/fiap/spring/model/dto/cadastro/CreateUpdateCadastroDTO.java
+ br.com.fiap.spring.model.dto.cadastro.CreateUpdateCadastroDTO
+br/com/fiap/spring/service/cadastro/CadastroServiceImpl.java
+ br.com.fiap.spring.service.cadastro.CadastroServiceImpl
