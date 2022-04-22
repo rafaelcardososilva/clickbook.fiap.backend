@@ -26,9 +26,9 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public List<PostDTO> buscarPosts() {
-        List<Post> postList = postRepository.findAll();
-       // List<Post> postList = postRepository.buscarPosts();
-        
+        //List<Post> postList = postRepository.findAll();
+        List<Post> postList = postRepository.buscarPosts();
+
         return postList.stream()
                 .map(PostDTO::new)
                 .collect(Collectors.toList());
