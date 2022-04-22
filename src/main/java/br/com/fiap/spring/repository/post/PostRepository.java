@@ -11,7 +11,7 @@ public interface PostRepository extends JpaRepository<Post, Integer> {
 //    @Query(value = "SELECT * FROM TB_POST", nativeQuery=true)
 //    List<Post> buscarPosts();
 
-    String queryString =  "select * from tb_post ";
+    String queryString =  "select * from tb_post";
 
 
     @Query(value = queryString, nativeQuery=true)
