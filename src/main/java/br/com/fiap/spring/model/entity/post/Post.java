@@ -8,7 +8,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "TB_POST")
+@Table(name = "tbPost")
 public class Post {
 
     @Id

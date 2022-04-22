@@ -23,7 +23,6 @@ public class PostController {
     }
 
     @RequestMapping(value = {"/posts"}, method = RequestMethod.GET)
-    @ResponseStatus(HttpStatus.OK)
     public List<PostDTO> buscarPosts() {
 
         return postService.buscarPosts();
