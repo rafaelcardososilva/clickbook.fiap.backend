@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 public interface CadastroRepository extends JpaRepository<Cadastro, Integer> {
 
-    @Query("SELECT c FROM TBCADASTRO c WHERE c.nome = :nome and c.senha = :senha")
+    @Query("SELECT c FROM Cadastro c WHERE c.nome = :nome and c.senha = :senha")
     Cadastro buscarLogin(@Param("nome") String nome,
                          @Param("senha") String senha);
 
