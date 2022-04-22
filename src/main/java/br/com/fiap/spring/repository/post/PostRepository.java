@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface PostRepository extends JpaRepository<Post, Integer> {
-    String queryString =  "SELECT * FROM tbPost";
+    String queryString =  "SELECT * FROM TBPOST";
 
     @Query(value = queryString, nativeQuery=true)
     List<Post> buscarPosts();
