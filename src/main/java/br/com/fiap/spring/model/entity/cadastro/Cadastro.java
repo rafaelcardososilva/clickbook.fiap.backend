@@ -7,7 +7,9 @@ import javax.persistence.*;
 @Entity
 @Table(name = "TBCADASTRO")
 public class Cadastro {
-    
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Column
