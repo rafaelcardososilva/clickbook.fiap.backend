@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 
 public interface CadastroRepository extends JpaRepository<Cadastro, Integer> {
 
-    String queryString = "SELECT cadastro c FROM TBCADASTRO WHERE c.nome like %:nome% and where c.senha like %:senha%";
+    String queryString = "SELECT nome, senha FROM TBCADASTRO WHERE NOME = '%:nome% and SENHA = '%:senha%";
 
     @Query(value = queryString, nativeQuery = true)
     Cadastro buscarLogin(String nome, String senha);
