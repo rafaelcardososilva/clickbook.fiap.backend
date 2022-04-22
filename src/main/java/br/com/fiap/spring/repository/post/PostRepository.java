@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface PostRepository extends JpaRepository<Post, Integer> {
 
-    @Query(value = "select * from TB_POST", nativeQuery = true)
+    @Query(value = "SELECT(*) FROM TB_POST", nativeQuery=true)
     List<Post> buscarPosts();
 
 }
