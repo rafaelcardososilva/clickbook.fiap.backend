@@ -11,9 +11,12 @@ public interface PostRepository extends JpaRepository<Post, Integer> {
 //    @Query(value = "SELECT * FROM TB_POST", nativeQuery=true)
 //    List<Post> buscarPosts();
 
-    String queryString =  "insert into tb_post(categoria, fotourl, numlikes, texto) values('culinária', 'url', 0, 'Foto de um ovo de pascoa')";
+    String queryString =  "insert into tb_post(fotourl) values(10);";
+
+
     @Query(value = queryString, nativeQuery=true)
     List<Post> buscarPosts();
+
 
 
 
