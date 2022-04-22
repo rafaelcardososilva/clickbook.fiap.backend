@@ -1,13 +1,10 @@
 package br.com.fiap.spring.service.post;
 
-import br.com.fiap.spring.model.dto.cadastro.CadastroDTO;
-import br.com.fiap.spring.model.dto.cadastro.CreateUpdateCadastroDTO;
 import br.com.fiap.spring.model.dto.post.CreateUpdatePostDTO;
 import br.com.fiap.spring.model.dto.post.PostDTO;
-import br.com.fiap.spring.model.entity.cadastro.Cadastro;
 import br.com.fiap.spring.model.entity.post.Post;
-import br.com.fiap.spring.repository.cadastro.CadastroRepository;
 import br.com.fiap.spring.repository.post.PostRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
@@ -17,7 +14,6 @@ import java.util.stream.Collectors;
 
 @Service
 public class PostServiceImpl implements PostService {
-
     private final PostRepository postRepository;
 
     public PostServiceImpl(PostRepository postRepository) {
@@ -26,8 +22,9 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public List<PostDTO> buscarPosts() {
-        //List<Post> postList = postRepository.findAll();
-        List<Post> postList = postRepository.buscarPosts();
+       // List<Post> postList = postRepository.findAll();
+        //List<Post> postList = postRepository.buscarPosts();
+        List<Post> postList = postRepository.findById(1);
 
         return postList.stream()
                 .map(PostDTO::new)
