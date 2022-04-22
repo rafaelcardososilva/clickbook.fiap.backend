@@ -9,7 +9,6 @@ import javax.persistence.*;
 public class Cadastro {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Column

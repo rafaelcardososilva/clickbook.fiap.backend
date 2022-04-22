@@ -24,7 +24,7 @@ public class CadastroController {
         return cadastroService.buscarCadastro(verifyCadastroDTO.getNome(), verifyCadastroDTO.getSenha());
     }
 
-    @RequestMapping(value = {"/novo"}, method = RequestMethod.POST)
+    @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public CadastroDTO criarCadastro(@RequestBody CreateUpdateCadastroDTO createUpdateCadastroDTO) {
 
