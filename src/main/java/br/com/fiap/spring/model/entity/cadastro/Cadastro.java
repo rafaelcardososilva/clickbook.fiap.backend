@@ -5,11 +5,9 @@ import br.com.fiap.spring.model.dto.cadastro.CreateUpdateCadastroDTO;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "TB_CADASTRO")
+@Table(name = "TBCADASTRO")
 public class Cadastro {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
     private int id;
 
     @Column
