@@ -3,13 +3,12 @@ package br.com.fiap.spring.repository.cadastro;
 import br.com.fiap.spring.model.entity.cadastro.Cadastro;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 public interface CadastroRepository extends JpaRepository<Cadastro, Integer> {
 
-    String queryString = "SELECT nome, senha FROM TBCADASTRO WHERE NOME = %:nome% and SENHA = %:senha%";
-
-    @Query(value = queryString, nativeQuery = true)
-    Cadastro buscarLogin(String nome, String senha);
-
+    @Query("SELECT c FROM TBCADASTRO c WHERE c.nome = :nome and c.senha = :senha")
+    Cadastro buscarLogin(@Param("nome") String nome,
+                         @Param("senha") String senha);
 
 }
