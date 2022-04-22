@@ -36,7 +36,7 @@ public class PostController {
         return postService.buscarPostPorId(id);
     }
 
-    @RequestMapping(value = {"/novo"}, method = RequestMethod.POST)
+    @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public PostDTO criarPost(@RequestBody CreateUpdatePostDTO createUpdatePostDTO) {
 
