@@ -7,6 +7,7 @@ import br.com.fiap.spring.model.dto.post.CreateUpdatePostDTO;
 import br.com.fiap.spring.model.dto.post.PostDTO;
 import br.com.fiap.spring.service.cadastro.CadastroService;
 import br.com.fiap.spring.service.post.PostService;
+import br.com.fiap.spring.service.post.PostServiceImpl;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,9 +17,9 @@ import java.util.List;
 @RequestMapping(value = {"posts"})
 public class PostController {
 
-    private PostService postService;
+    private PostServiceImpl postService;
 
-    public PostController(PostService postService) {
+    public PostController(PostServiceImpl postService) {
         this.postService = postService;
     }
 
